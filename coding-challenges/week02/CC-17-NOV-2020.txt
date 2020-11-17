@@ -30,6 +30,6 @@
 
 9. Git branch   :  This command is used to show all the current branches on the working tree.
 
-10.Git Checkout :  This command is used to go to a commit in the repository. It mskes a temporary new branch in a
+10.Git Checkout :  This command is used to go to a commit in the repository. It makes a temporary new branch in a
 //                 detached head state where the changes you make will not affect the master branch. this is also 
 //                 used to switch between branches or to a particular SHA.
