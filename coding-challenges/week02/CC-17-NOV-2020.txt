@@ -1,0 +1,35 @@
+1. Git pull     :  This command is used to pull a change from a GitHub repository to your local device repository
+//                 so that any changes made on the main file on the GitHub repository (likely by someone else  
+//                 working on the same program), So that we can always be updated to the latest changes.
+
+2. Git push     :  This command is used to push a change to a GitHub repository from your local device repository
+//                 so that any changes made by you on the local files can be reflected on the GitHub repository 
+//                 and other people working on the same repository will be updated of your progress.
+
+3. Git merge    :  This command will merge the branch whose name you have given to the branch you are in and it is
+//                 is used to update the changes on the master branch after making sure that all the required 
+//                 changes have been made and the code is correct in the branch.
+
+4. Git log      :  This command is used to show all the commits made in the repository with their addresses (SHA)
+//                 being shown with them and the messeges that the user put during creation of the commits so that 
+//                 we can keep track of the work we were doing and to understand what is happening in that commit
+//                 It also displays information about the person who has made those commits.
+
+5. Git status   :  This command is used to check the status of the working tree and this lets you know about the 
+//                 untracked files, staged files and other status of the working tree for different branches.
+
+6. Git commit   :  This command is used to commit the staged files as a checkpoint in the working tree which you
+//                 can come back to, review later, make branches from and other things. Commit is basically used
+//                 to save the added, deleted and modified files to the working tree permanently.
+
+7. Git init     :  This command is used to initialize an empty git repository in a folder where you want so that 
+//                 git can keep track of the things you want to do in that repository
+
+8. Git clone    :  This command is used to pull a repository from GitHub server to your local device for the first 
+//                 time. It basically is like linking your local repository from the one on GitHub server.
+
+9. Git branch   :  This command is used to show all the current branches on the working tree.
+
+10.Git Checkout :  This command is used to go to a commit in the repository. It mskes a temporary new branch in a
+//                 detached head state where the changes you make will not affect the master branch. this is also 
+//                 used to switch between branches or to a particular SHA.
