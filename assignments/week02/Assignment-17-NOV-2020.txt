@@ -1,0 +1,17 @@
+A web browser needs two things in order to access a website or a domain which is the IP address
+and the Port of the domain but when we write a website address or domain name in a web browser, 
+the browser doesn't directly know the IP address or the port of the URL provided so, it has to 
+go to an entity known as Domain Name System (DNS) to fetch the IP address and port of the URL. 
+
+DNS has the mapping of the domain names to their respective IP addresses and ports which is 
+managed and controlled by IETF (Internet Engineering Task Force). The IETF is responsible to 
+manage the Internet and the DNS servers. So, when the DNS server gives the browser the mapped
+IP address and the Port of the domain, the browser then goes to the address and fetches the 
+website from that address where the code of the website is stored in a server (computer) of 
+a Hosting Service Provider.
+
+These Hosting Service providers like AWS, AZAURE which give act as brokers to the IETF and 
+the Domain owners. These Hosting Service providers buy the domain addresses from the IETF and
+rent them out to the people looking for a domain. So they provide the server space to the 
+people and host their website on their servers from where the website can stay active all the 
+time and the code for the website can be accessed by any browser whenever it is searched on it.
