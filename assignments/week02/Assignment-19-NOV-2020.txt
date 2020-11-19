@@ -1,0 +1,43 @@
+        USE OF OPERATORS IN PYTHON
+
+        ARITHMETIC OPERATORS     
+
+S.NO  SYNTAX   :    OPERATORS             :    DESCRIPTION
+     
+1.    a + b    :    Addition " + "        :    This operator is used to add "a" and "b" then, gives the result as output.
+
+2.    a - b    :    Subtraction " - "     :    This operator is used to subtract "b" from "a" then, gives the result as output.
+
+3.    a * b    :    Multiplication " * "  :    This operator is used to multiply "a" and "b" then, gives the result as output.
+
+4.    a / b    :    Division " / "        :    This operator is used to divide "a" from "b" then, gives the result as output.
+
+5.    a // b   :    Integer " // "        :    This operator is used to divide "a" from "b" and gives only the integer part of the quotient as output.
+
+6.    a % b    :    Remainder " % "       :    This operator is used to divide "a" from "b" and thereby gives remainder as the output.
+
+
+	BOOLEAN OPERATORS
+
+S.NO  SYNTAX   :    OPERATORS             :    DESCRIPTION
+
+1.    a == b   :    Equal                 :    This is an "Boolean equality operator" which checks the values and gives true or false depending on the condition.
+
+                                               Example :   a=5                a=5                                                        
+	                                                   b=5                b=6
+	                                                   a==b               a==6
+                                                           Output --> True    Output --> False
+
+	                                                
+
+2.    a != b   :   Not Equal              :    This is an "Boolean in-equality operator" which checks if the value is not equal to the condition and gives true false as output
+
+	                                       Example :   a=5                a=5                                                        
+	                                                   b=5                b=6
+	                                                   a!=b               a!=6
+                                                           Output --> False    Output --> True
+       
+
+
+
+
