@@ -1,6 +1,6 @@
 # Samaradhh run the code ok !! Its long only because I did it that way and I did not want to use GOTO statement here !! :)
 
-# ANS - 1 - CALCULATOR
+# ANS - 1a - CALCULATOR
 
 count = "First_Time"
 while True:
@@ -41,9 +41,7 @@ while True:
         operator = input()
         print("")
     
-    
-
-
+ 
     if operator == "+":
         print("You have selected Addition and the result is : ",firstNumber," + ",secondNumber," = ",firstNumber + secondNumber)
     elif operator == "-":
@@ -59,6 +57,41 @@ while True:
         print("You have entered a wrong choice please give a correct operation.") 
     
     count = "Repeating_Loop"
+    
+    
+    
+# ANS - 1b - Tables Generator
+
+count = "First_Time"
+while True:
+    if count == "Repeating_Loop":
+        print("")
+        print("If you want to quit press 'Q', if you want to try again press any other key : ", end="")
+        choice = input()
+        print("")
+        if choice == "q" or choice == "Q":
+            print("Thanks for using the Table generator.")
+            break
+        else:
+            print("Enter the number whose tables you want to get : ", end="")
+            number = int(input())
+            print("")
+            print("The table of ", number, " is : ")
+            
+            for i in range(1,11):
+                print(number," * ", i, " = ", number * i)
+    else:
+        print("")
+        print("Enter the number whose tables you want to get : ", end="")
+        number = int(input())
+        print("")
+        print("The table of ", number, " is : ")
+        print("")
+            
+        for i in range(1,11):
+            print(number," * ", i, " = ", number * i)
+        count = "Repeating_Loop"
+
 
 
 # ANS - 2 - LEAP YEAR FINDER
