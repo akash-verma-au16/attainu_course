@@ -1,5 +1,8 @@
-count = "First_Time"
+# Samaradhh run the code ok !! Its long only because I did it that way and I did not want to use GOTO statement here !! :)
 
+# ANS - 1 - CALCULATOR
+
+count = "First_Time"
 while True:
     
     if count == "First_Time":
@@ -56,6 +59,42 @@ while True:
         print("You have entered a wrong choice please give a correct operation.") 
     
     count = "Repeating_Loop"
-           
+
+
+# ANS - 2 - LEAP YEAR FINDER
+
+count = "First_Time"
+while True:
+    
+    if count == "Repeat_Loop":
+        print("")
+        print("If you want to try again press 'Y' and if you want to quit then press any other key : ", end="")
+        choice = input()
+        print("")
+        
+        if choice == "y" or choice == "Y":
+            print("Enter the year : ", end="")
+            test_year = int(input())
+            print("")
+
+            if test_year % 4 == 0 and test_year != 100 or test_year % 400 == 0:
+                print("The year", test_year, " is a Leap year")
+            else:
+                print("The year", test_year, " is not a Leap year")
+        else:
+            print("Thanks for using Leap Year Finder")
+            break
+
+    else:
+        print("Enter the year : ", end="")
+        test_year = int(input())
+        print("")
+
+        if test_year % 4 == 0 and test_year != 100 or test_year % 400 == 0:
+            print("The year", test_year, " is a Leap year")
+        else:
+            print("The year", test_year, " is not a Leap year")
+        count = "Repeat_Loop"
+
 
 
