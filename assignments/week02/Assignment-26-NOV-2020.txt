@@ -1,0 +1,232 @@
+ANS-1-  maximum of two numbers
+
+
+
+while True:
+    print()
+    print("Enter the First no : ", end="")
+    firstNumber = int(input())
+    print()
+    print("Enter the Second no : ", end="")
+    secondNumber = int(input())
+    print()
+
+    def maximum(firstNumber, secondNumber):
+        if firstNumber > secondNumber:
+            print("Maximum is :", firstNumber)
+        elif firstNumber == secondNumber:
+            print("Both are equal.")  
+        else:
+            print("Maximum is :", secondNumber)   
+
+    maximum(firstNumber, secondNumber)   
+
+    print()
+    print("Press 'Y' to try again or any other key to quit : ", end="")
+    choice = input()
+    if choice == "y" or choice == "Y":
+        continue
+    else:
+        break
+
+
+
+
+ANS-2-  fizz_buzz
+
+
+
+while True:
+    print()
+    print("Enter a number : ", end="")
+    number = int(input())
+    print()
+
+    def fizz_buzz(number):
+        if number % 3 == 0 and number % 5 == 0:
+            return "FizzBuzz"
+        elif number % 3 == 0:
+            return "Fizz"
+        elif number % 5 == 0:
+            return "Buzz"      
+        else:
+            return number   
+
+    print(fizz_buzz(number))   
+
+    print()
+    print("Press 'Y' to try again or any other key to quit : ", end="")
+    choice = input()
+    if choice == "y" or choice == "Y":
+        continue
+    else:
+        break
+
+
+
+
+ANS-3- checking the speed of drivers
+
+
+
+while True:
+    print()
+    print("Enter the speed of the driver : ", end="")
+    speed = int(input())
+    print()
+
+    def check(speed):
+        if speed < 70:
+            print("Ok")   
+        else:
+            difference = speed - 70   
+            points = difference / 5
+            if points > 12:
+                print("License Suspended")
+            else:
+                print("Points : ", points)
+
+    check(speed)   
+
+    print()
+    print("Press 'Y' to try again or any other key to quit : ", end="")
+    choice = input()
+    if choice == "y" or choice == "Y":
+        continue
+    else:
+        break
+
+
+
+
+ANS-4- showNumbers
+
+
+
+while True:
+    print()
+    print("Enter the number till which you want to show numbers : ", end="")
+    limit = int(input())
+    print()
+
+    def showNumbers(limit):
+        for i in range(0, limit + 1):
+            if i % 2 == 0:
+                print(i, "EVEN")
+            else:
+                print(i, "ODD")
+            
+
+    showNumbers(limit)   
+
+    print()
+    print("Press 'Y' to try again or any other key to quit : ", end="")
+    choice = input()
+    if choice == "y" or choice == "Y":
+        continue
+    else:
+        break
+
+
+
+ANS-5-  sum of multiples of 3 and 5
+
+
+
+while True:
+    print()
+    print("Enter the number till which you want the sum : ", end="")
+    limit = int(input())
+    print()
+    
+
+    def add(limit):
+        sum = 0
+        for i in range(0, limit + 1):
+            if i % 3 == 0 or i % 5 == 0:
+                sum += i
+        return sum
+            
+
+    print("The sum is :", add(limit))   
+
+    print()
+    print("Press 'Y' to try again or any other key to quit : ", end="")
+    choice = input()
+    if choice == "y" or choice == "Y":
+        continue
+    else:
+        break
+
+
+
+
+ANS-6-  show_stars
+
+
+
+
+while True:
+    print()
+    print("Enter the rows till which you want to print the pattern : ", end="")
+    rows = int(input())
+    print()
+    
+
+    def show_stars(rows):
+        print()
+        for i in range(rows + 1):
+            for j in range(i):
+                print("* ",end="")
+            print()
+        print()  
+
+    show_stars(rows)
+
+    print()
+    print("Press 'Y' to try again or any other key to quit : ", end="")
+    choice = input()
+    if choice == "y" or choice == "Y":
+        continue
+    else:
+        break
+
+
+
+
+
+ANS-7- prime numbers
+
+
+
+
+while True:
+    print()
+    print("Enter the number till which you want to check for prime numbers : ", end="")
+    limit = int(input())
+    print()
+
+    def showPrime(limit):
+        print("The prime numbers between 0 and ", limit, " are : ")
+        print()
+        for i in range(2, limit + 1):
+            count = 0
+            for j in range(2, i + 1):
+                if i % j == 0:
+                    count += 1
+            if count == 1:
+                print(i, " : is a prime number")
+
+    showPrime(limit)
+
+    print()
+    print("Press 'Y' to try again or any other key to quit : ", end="")
+    choice = input()
+    if choice == "y" or choice == "Y":
+        continue
+    else:
+        break
+
+
+
+
