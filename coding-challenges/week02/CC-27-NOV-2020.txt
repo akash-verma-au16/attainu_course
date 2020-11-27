@@ -1,0 +1,125 @@
+ANS-1- Printing words in reverse
+
+
+
+print()
+print("Enter a string : ", end="")
+string = input()
+print()
+reverseString = []
+newString = ""
+newReverseString = ""
+
+for i in string:
+    
+    if i != " ":
+        newString += i
+    else:
+        reverseString.append(newString)
+        reverseString.append(" ")
+        newString = "" 
+
+newReverseString += newString
+
+for i in reverseString[::-1]:    
+    newReverseString += i                   
+
+print()
+print("The String in reverse is :",newReverseString)
+print()
+
+
+
+
+ANS-2- Replacing "and" with ","
+
+
+
+print()
+print("Enter a string : ", end="")
+string = input()
+print()
+stringList = []
+newString = ""
+
+for i in string:  
+    if i != " ":
+        newString += i
+    else:
+        stringList.append(newString)
+        stringList.append(" ")
+        newString = ""                
+stringList.append(newString)
+newString = ""
+
+for i in stringList:
+    if i == "and":
+        newString += ","
+        continue
+    else:
+        newString += i
+
+print()
+print("The new String is :",newString)
+print()
+
+
+
+
+ANS-3- Printing string in reverse
+
+
+
+print()
+print("Enter a string : ", end="")
+string = input()
+print()
+reverseString = []
+newString = ""
+
+for i in string:
+    reverseString.append(i)
+
+for i in reverseString[::-1]:    
+    newString += i                    
+
+print()
+print("The String in reverse is : ", newString, end="")
+print()
+
+
+
+
+
+ANS-4- Making intitial word capital
+
+
+
+
+print()
+print("Enter a string : ", end="")
+string = input()
+print()
+stringList = []
+newString = ""
+space = True
+
+for i in string:
+    stringList.append(i)  
+    
+for i in range(0, len(stringList)):    
+    if space == True:
+        stringList[i] = stringList[i].upper()
+        space = False 
+    if stringList[i] == ' ':
+        space = True
+
+for i in stringList:
+    newString += i
+
+print()
+print("The String in reverse is :",newString)
+print()
+
+
+
