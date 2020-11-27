@@ -53,7 +53,7 @@ stringList.append(newString)
 newString = ""
 
 for i in stringList:
-    if i == "and":
+    if i == "and" or i == "And" or i == "AND":
         newString += ","
         continue
     else:
