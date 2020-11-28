@@ -1,0 +1,95 @@
+ANS-1- Output :    
+
+4 is maximum
+
+
+
+ANS-2- output :
+
+x is 50
+Changed local x to 2
+x is now 50
+
+
+
+
+ANS-3- Vowels Remover
+
+while True:
+    print()
+    print("Enter a string : ", end="")
+    string = input()
+    print()
+    new_string = ""
+    for i in string:
+        if i == "a" or i == "A" or i == "e" or i == "E" or i == "i" or i == "I" or i == "o" or i == "O" or i == "u" or i == "U":
+            continue
+        else:
+            new_string += i 
+
+    print("The new string is : ", new_string)
+    print()
+    print()
+
+    print("Press 'Y' to try again or any other key to quit : ", end="")
+    choice = input()
+    if choice == "y" or choice == "Y":
+        continue
+    else:
+        break
+
+
+
+
+ANS-4a- Pattern Printing
+
+while True:
+    print()
+    print("Enter the number of rows : ", end="")
+    rows = int(input())
+    print()
+    print("Enter the number of columns : ", end="")
+    columns = int(input())
+    print()
+
+    m=columns - 1
+    for i in range(rows):  
+        for j in range(m):  
+            print(end=" ") 
+        m=m-1     
+        for j in range(i):  
+            print("* ", end="")    
+        print()
+    print()
+
+    print("Press 'Y' to try again or any other key to quit : ", end="")
+    choice = input()
+    if choice == "y" or choice == "Y":
+        continue
+    else:
+        break
+
+
+
+ANS-4b- Increasing no. Pattern
+
+while True:
+    print()
+    print("Enter the number of rows till which you want to print the pattern : ", end="")
+    rows = int(input())
+    print()
+
+    k = 1
+    for i in range(rows + 1):
+        for j in range(i):
+            print(k, " ",end="")
+            k = k + 1
+        print()
+    print() 
+
+    print("Press 'Y' to try again or any other key to quit : ", end="")
+    choice = input()
+    if choice == "y" or choice == "Y":
+        continue
+    else:
+        break

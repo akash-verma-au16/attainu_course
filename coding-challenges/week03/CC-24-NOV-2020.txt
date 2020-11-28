@@ -1,0 +1,54 @@
+ANS-1- vowel printer
+
+
+while True:
+    print("")
+    print("Enter a string : ", end="")
+    string = input()
+    print("")
+    print("The vowels in this String are : ", end="")
+    for i in string:
+        if i == "a" or i == "A" or i == "e" or i == "E" or i == "i" or i == "I" or i == "o" or i == "O" or i == "u" or i == "U":
+            print( " ", i, ",", end="")
+    print("")
+    print("")
+    print("Press 'Y' to try again or any other key to quit : ", end="")
+
+    choice = input()
+    if choice == "y" or choice == "Y":
+        continue
+    else:
+        break
+     
+
+ANS-2- natural number printer and sum finder
+
+
+while True:
+    print("")
+    print("Enter any natural number : ", end="")
+    number = int(input())
+    print("")
+    sum = 0
+    print("The sum of the natural numbers is : ", end="")
+    for i in range(1, number + 1):
+        sum += i
+        print(i, end="")
+        if i == number:
+            break
+        else:
+            print(" + ", end="")
+    print(" =", sum)
+    print("")
+    print("")
+    print("Press 'Y' to try again or any other key to quit : ", end="")
+
+    choice = input()
+    if choice == "y" or choice == "Y":
+        continue
+    else:
+        break
+            
+
+
+       
