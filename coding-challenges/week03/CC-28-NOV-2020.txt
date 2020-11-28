@@ -1,4 +1,4 @@
-ANS-1-
+ANS-1- Find Even And Odd
 
 
 
@@ -28,7 +28,7 @@ findEvenOdd(userInput)
 
 
 
-ANS-2-
+ANS-2- Find Vowels
 
 
 
