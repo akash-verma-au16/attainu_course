@@ -1,0 +1,104 @@
+ANS-1- Counting Word
+
+
+
+def findWord(newList,word):
+    count = 0
+    for i in newList:
+        if i == word.upper() or i == word.lower():
+            count += 1
+    return count
+
+print()
+print("Enter a string : ", end="")
+userInput = input()
+stringList = list(userInput.split(" "))
+print()
+print("Enter the word you want to be counted : ", end="")
+word = input()
+print()
+print("Frequency of the word '", word,"' is : ", findWord(stringList,word))
+
+
+
+
+
+ANS-2- Circle Area and Circumference
+
+
+
+
+def circle(radius):
+    pi = 3.14
+    print("Area = ", pi * radius ** 2)
+    print("Circumference = ", 2 * pi * radius)
+
+print()
+print("Enter the radius of the circle : ", end="")
+userInput = int(input())
+print()
+circle(userInput)
+
+
+
+
+
+ANS-3- Max Items
+
+
+
+
+userItem = {}
+print()
+print("Enter the number of items you want to add data for : ", end="")
+n = int(input())
+
+for i in range(1, n + 1):
+    print()
+    print("Enter the Name of the ", i, " item", end=" : ")
+    item = input()
+    print()
+    print("Enter the Quantity of", item, end=" : ")
+    userItem[item] = int(input())
+    print()
+
+print("The given data is : ", userItem)
+print()
+maxQuantity = 0
+itemName = ""
+for key,value in userItem.items():
+    if value > maxQuantity:
+        maxQuantity = value
+        itemName = key
+print("Max quantity is : ", maxQuantity, " of item : ", itemName)
+
+
+
+
+
+ANS-4- Palindromes
+
+
+
+print()
+print("Enter a word to check for Palindrome : ", end="")
+userInput = input()
+print()
+stringlist = list(userInput) 
+i = len(stringlist) - 1
+j = 0
+while True:
+    if stringlist[i] == stringlist[j].lower() or stringlist[i] == stringlist[j].upper():
+        i -= 1
+        j += 1
+        if i == j:
+            print(userInput, "is a Palindrome")
+            break
+        elif i - 1 == j:
+            print(userInput, "is a Palindrome")
+            break
+    else:
+        print(userInput, "is not a Palindrome")
+        break
+
+
