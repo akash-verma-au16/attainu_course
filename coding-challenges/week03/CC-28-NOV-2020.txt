@@ -16,8 +16,12 @@ def findEvenOdd(numberList):
     print("Odd_count : ", odd_count)
 
 print()
-print("Enter a list of numbers in 123456...n fashion : ", end="")
-userInput = list(input())
+print("Enter a range(n) for the numbers in the list : ", end="")
+n=int(input())
+userInput = []
+print("Enter a list of numbers : ")
+for i in range(0, n):
+    userInput.append(input())
 print("The list entered by you is : ", userInput)
 findEvenOdd(userInput)
 
