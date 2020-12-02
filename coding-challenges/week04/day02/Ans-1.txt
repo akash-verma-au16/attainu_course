@@ -1,0 +1,4 @@
+ANS-1- Inheritance is the capability of one class to derive or inherit the properties from another class. 
+       The new class is called derived (or child) class and the one from which it inherits is called the 
+       base (or parent) class. Derived class inherits features from the base class where new features can 
+       be added to it as well.
