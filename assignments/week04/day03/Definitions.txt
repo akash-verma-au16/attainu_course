@@ -1,0 +1,9 @@
+ANS-1-  Inheritance   : Parent child relation where child inhertis all properties, methods of parent class.
+
+        Abstraction   : Hiding the details i.e you dont need to express all things everytime like starting 
+                        a fan u dont need to think about how it works everytime.
+
+        Encapsulation : Any function or method which starts with _ should not be used outside of that class.
+
+        Polymorphism  : Many forms of a same class. Therefore code can take different forms.(example - By 
+                        creating Shape class to find area we can find area of square,rectangle, circle etc).
