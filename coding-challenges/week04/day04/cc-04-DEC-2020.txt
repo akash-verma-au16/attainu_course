@@ -1,0 +1,8 @@
+ANS-1- O(log N to the base 2)
+
+
+ANS-2- Loop will run infinite times as value of i is not changing its constant at n/2 
+       so outer loop will never stop running. So order is O(infinite)
+
+ANS-3- ERROR as j is undefined so second loop won't start and code won't run, and even 
+       if j is defined anywhere its infinite loop as j value is not changing..
