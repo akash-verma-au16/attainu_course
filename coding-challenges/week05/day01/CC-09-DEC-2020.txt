@@ -1,0 +1,135 @@
+
+
+# I have provided the solutions that have to be pasted in the leetcode IDE with Python3 selected as language
+
+
+
+ANS-1- Paste the solution in the given link : https://leetcode.com/problems/rotate-array/
+
+
+  
+class Solution:
+    def rotate(self, nums: List[int], k: int) -> None:
+        """
+        Do not return anything, modify nums in-place instead.
+        """  
+        for k in range(k):
+            nums.insert(0,nums.pop())         
+
+
+
+# Here the Time Complexity is -> O[k]
+# and the Space complexity is -> O[1]
+
+
+
+
+ANS-2- Paste the solution in the given link : https://leetcode.com/problems/plus-one/
+
+
+
+# First Approach :-
+
+
+
+class Solution:
+    def plusOne(self, digits: List[int]) -> List[int]:
+        digits_string_list = [str(x) for x in digits]
+
+        digits_string = "".join(digits_string_list)
+
+        if int(digits_string) == 0:
+            return digits[0:-1] + [1]
+
+        digits_number = int(digits_string)
+
+        digits_number += 1
+
+        return self.output(digits_number)
+
+    def output(self, digits_number):
+        digits_list = []
+
+        while digits_number > 0:
+            digits_list.append(digits_number % 10)
+            digits_number //= 10
+
+        return digits_list[::-1] 
+
+
+
+
+# Here the Time Complexity is -> O[n]
+# and the Space complexity is -> O[n]
+
+
+
+# Second Approach :-
+
+
+
+class Solution:
+    def plusOne(self, digits: List[int]) -> List[int]:
+	digits_string_list = [str(x) for x in digits]
+
+        digits_string = "".join(digits_string_list)
+
+        if int(digits_string) == 0:
+            return digits[0:-1] + [1]
+
+        digits_number = int(digits_string)
+
+        digits_number += 1
+
+        return self.output(digits_number)
+
+    def output(self, digits_number):
+        result = []
+        final_digits_list = str(digits_number)
+
+        for digit in final_digits_list:
+            result.append(int(digit))
+
+        return result
+
+
+
+
+
+# Here the Time Complexity is -> O[n]
+# and the Space complexity is -> O[n]
+
+
+
+
+# Third Approach :-
+
+
+
+
+class Solution:
+    def plusOne(self, digits: List[int]) -> List[int]:
+        new_digits = []
+        add = digits[-1] + 1
+        carry = 0
+        
+        if add < 9:
+            digits[-1] = add
+            return digits  
+            
+        else:
+            for i in range(len(digits) - 1, -1, -1):
+                carry = add // 10  
+                add %= 10 
+                new_digits.append(add)
+                add = digits[i - 1] + carry
+
+            if new_digits[-1] == 0:
+                new_digits.append(1)  
+
+            return new_digits[::-1] 
+
+
+
+# Here the Time Complexity is -> O[n]
+# and the Space complexity is -> O[n]
