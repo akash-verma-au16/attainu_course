@@ -1,0 +1,58 @@
+ANS-1- Matrix Diagonal Sum - Paste the code in the gien link here : https://leetcode.com/problems/matrix-diagonal-sum/
+
+
+
+class Solution:
+    def diagonalSum(self, mat: List[List[int]]) -> int:
+        sum = 0
+        j = len(mat) - 1
+        for i in range(len(mat)):
+            sum += mat[i][i]
+            if i != j:   
+                sum += mat[i][j]
+            j -= 1
+        return sum
+
+
+
+ANS-2- Lucky Numbers in a Matrix - Paste the code in the gien link here : https://leetcode.com/problems/lucky-numbers-in-a-matrix/ 
+
+
+
+
+class Solution:
+    def luckyNumbers (self, matrix: List[List[int]]) -> List[int]:
+        result = []
+        for n in range(len(matrix[0])):
+            column_max = 0            
+            for m in range(len(matrix)):
+                if matrix[m][n] > column_max:
+                    column_max = matrix[m][n]
+                    index_of_max = m
+            if column_max == min(matrix[index_of_max]):
+                result.append(column_max)
+        return result
+
+
+
+ANS-3- Upper Triangle of Matrix
+
+
+
+
+
+rows = int(input("Enter the no. of rows : "))
+columns = int(input("Enter the no. of columns : "))
+
+print("Enter the matrix Row wise : ")
+
+matrix = [[int(input()) for _ in range(columns)] for _ in range(rows)]
+
+print(f"Your given matrix is : {matrix}")
+
+for row in range(rows):
+    for column in range(columns): 
+        print(matrix[row][column], end = "     ") 
+    columns -= 1         
+    print()
+
