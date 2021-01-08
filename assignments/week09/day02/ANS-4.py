@@ -19,7 +19,6 @@ class Solution:
             l2 = l2.next
             
         no = int(no_1) + int(no_2)
-        print(no_1,no_2,no)
         
         l3 = ListNode()
         head = l3
