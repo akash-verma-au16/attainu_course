@@ -19,7 +19,7 @@ class Solution:
             next_level = deque()
 
             while queue:
-                node, index= queue.popleft()
+                node, index = queue.popleft()
 
                 if node.left :
                     next_level.append((node.left, 2 * index))
