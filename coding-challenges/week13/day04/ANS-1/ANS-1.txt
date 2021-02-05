@@ -1,0 +1,24 @@
+- Dynamic Host Configuration Protocol (DHCP):
+
+      The Dynamic Host Configuration Protocol (DHCP) is a network management protocol used on 
+      Internet Protocol (IP) networks, whereby a DHCP server dynamically assigns an IP address 
+      and other network configuration parameters to each device on the network, so they can 
+      communicate with other IP networks.
+
+- Address Resolution Protocol (ARP):
+
+      The Address Resolution Protocol (ARP) is a communication protocol used for discovering 
+      the link layer address, such as a MAC address, associated with a given internet layer 
+      address, typically an IPv4 address. 
+      This mapping is a critical function in the Internet protocol suite. 
+                         
+
+- Network Address Translation (NAT):
+
+      Network Address Translation (NAT) is an Internet standard that enables a local-area 
+      network (LAN) to use one set of IP addresses for internal traffic and a second set 
+      of addresses for external traffic. Developed by Cisco, the NAT process relies on a 
+      device (usually a router) to make all necessary IP address translations where the 
+      LAN meets the Internet.
+
+                         
