@@ -12,6 +12,16 @@ Tiny URL:
         driving traffic to a specific page. It’s also helpful for adding UTM parameters to a link
         without making them obvious to the audience.
 
+        In addition to Tiny URL, other examples of URL shortening services include Bit.ly,
+        Rebrandly, Owl.ly, Cut.ly, and Shorte.ST. Unlike some of its competitors, Tiny URL
+        has always provided all of its features for free. Some social media platforms like
+        Twitter and LinkedIn also have inherent URL shortening services, but users must
+        create an account to draft a post and access those features.
+        
+        Software designing is more about “thinking” and “asking questions”. Get specific
+        and minimum requirements for the project. When questioned about how to make a
+        tiny URL, find out the requirements for the short URL.
+
         Few things that we should ask them is:
 
         1. MVP (Minimal Viable Project)
