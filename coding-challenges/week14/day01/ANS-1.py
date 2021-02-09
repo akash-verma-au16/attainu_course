@@ -24,11 +24,47 @@ Tiny URL:
 
         Few things that we should ask them is:
 
-        1. MVP (Minimal Viable Project)
-        2. Calculations
-        3. High Level Picture
+        1. MVP (Minimal Viable Project):
+                        a. How many users do I have to serve? Asking about the scale of the project.
+                        b. Do the system login / sign-up? Mostly, interviewer will not ask for this.
+                        c. What is Read-to-Write ratio? (1:10, for every 1 write you have 10 reads)
+                        d. Availability is important than consistency, highly available.
+                        e. If some gives a big URL, the system should give short URL
+                        f. Necessity of Analytics – to know how many people are visiting, how many
+                        redirects, how many requests are failing and many such details can be
+                        found. This is done by Analyst / Product Managers.
+                        g. The above list of requirements is called Functional and Non-Functional
+                        Requirements.
+
+        2. Calculations:
+                        a. The interview says 1 billion users, (1 Billion = 1010) are to be served. 
+                           If we have 1 billion users are coming on daily basis, then we would have 
+                           1,157,40 users / second. As per the read to write ratio (1:10), we would
+                           have 11,574 would be writer and 104,166 would be readers. If interviewer 
+                           says on an average, one computer can handle 200 users, then we need 
+                           approximately 6 computers for master and the same number for
+                           slaves. These are called back of the envelop calculations.
+                        b. For sudden increase in the users, then we have to calculate for the number
+                           of servers in addition as back up to handle the huge number of loads.
+                        c. Storage Calculation: Now the length of the URL is 1000, but we are
+                           giving Tiny URL. The original length of URL would be around 1000 bytes
+                           (assume) so for Tiny URL, we have to 20 bytes. So, the total space we
+                           need would be 1000 bytes + 20 bytes = 1020 bytes = 1 MB (approx.) for 1
+                           sec, it would write 11,574, so for 1 second, the storage would be 11,574 X
+                           1MB. And for one day, we would need 11574 X 1MB X 24 X 60 X 60. If we
+                           are to run this website for 5 yrs. then we need 11574 X 1MB X 24 X 60 X 60
+                           X 5 MB of storage capacity.
+
+        3. High Level Picture:
+                        a. The client in his browser hit Tiny URL. In the box, he will
+                           have two options, one is a Tiny URL and the other is new URL. 
+                        b. The Tiny URL will check the mapping if the Tiny URL is already 
+                           mapped to a particular website previously.
+                        c. This is the high-level view of the system.
+
 
         They basically deal with issues like:
+        
          Portability
          Security
          Maintainability
