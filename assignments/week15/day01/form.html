@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+    <h1><strong><u>Student Registration Form</u></strong></h1>
+
+    <form action="" method="get" id="form">
+        <div>
+          <label>First Name: </label>
+          <input type="text" placeholder="Enter First Name" maxlength="30" pattern="[a-zA-Z]" required>
+        </div>
+        
+        <div>
+        <label>Last Name: </label>
+        <input type="text" placeholder="Enter Last Name" maxlength="30" pattern="[a-zA-Z]" required>
+        </div>
+        
+        <div>
+        <label>Date Of Birth: </label>
+        <input type="date" required>
+        </div>
+
+        <div>
+          <label>Email Id: </label>
+          <input type="email" placeholder="abc@xyz.com" required>
+        </div>
+
+        <div>
+            <label>Mobile No: </label>
+            <input type="number" placeholder="10-digit number" maxlength="10" required>
+        </div>
+
+        <div>
+            <label>Gender: </label>
+            <input type="radio" name="gender" value="Male" required>Male
+            <input type="radio" name="gender" value="Female" required>Female
+        </div>
+
+        <div>
+            <label>Address: </label>
+            <textarea rows = "5" cols = "50" placeholder="Enter Address" required></textarea>
+        </div>
+
+        <div>
+            <label>City: </label>
+            <input type="text" pattern="[a-zA-Z]" placeholder="Enter your city name" required>
+        </div>
+
+        <div>
+            <label>Pin Code: </label>
+            <input type="number" maxlength="6" placeholder="Enter pin code" required>
+        </div>
+
+        <div>
+            <label>State: </label>
+            <input type="text" pattern="[a-zA-Z]" placeholder="Enter your state name" required>
+        </div>
+
+        <div>
+            <label>Country: </label>
+            <input type="text" pattern="[a-zA-Z]" placeholder="Enter your country name" required>
+        </div>
+
+        <div>
+            <label>Hobbies: </label>
+            <input type="radio" name="hobbies" value="Singing" required>Singing
+            <input type="radio" name="hobbies" value="Dancing" required>Dancing
+            <input type="radio" name="hobbies" value="Drawing" required>Drawing
+            <input type="radio" name="hobbies" value="Sketching" required>Sketching
+            <input type="radio" name="hobbies" value="" required>Others <input type="text" name="hobbies" required/>
+        </div>
+
+        <div>
+            <table>
+                    <tr>
+                        <td rowspan="5">Qualifications</td>
+                        <th>S. No.</th>
+                        <th>Examination</th>
+                        <th>Board</th>
+                        <th>Percentage</th>
+                        <th>Year of Passing</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <th>Class X</th>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <th>Class XII</th>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <th>Graduation</th>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <th>Masters</th>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+            </table>
+        </div>
+
+        <div>
+            <label>Courses: </label>
+            <input type="radio" name="courses" value="Singing" required>BCA
+            <input type="radio" name="courses" value="Dancing" required>B.Com
+            <input type="radio" name="courses" value="Drawing" required>B.Sc.
+            <input type="radio" name="courses" value="Sketching" required>B.A.
+        </div>
+
+        <div>
+          <input type="submit">
+        </div>
+      </form>
+
+</body>
+</html>
