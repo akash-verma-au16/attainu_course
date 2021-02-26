@@ -1,0 +1,38 @@
+body{
+    margin: 0px;
+    background-color: lightcoral;
+}
+
+.box{
+    height: 100vh;
+    border: 15px solid lightcoral;
+    border-radius: 20px;
+    padding: 50px;
+    background-color: dimgrey;
+}
+
+.box td{
+    padding: 0px 20px;
+}
+
+.title h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: maroon;
+}
+
+.image img{
+    border-radius: 30px;
+    
+}
+
+.description h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: goldenrod;
+
+}
+
+.description p{
+    color: darksalmon;
+    font-family: cursive;
+}
