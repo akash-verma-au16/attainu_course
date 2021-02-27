@@ -1,0 +1,83 @@
+body{
+    background-color: #333333;
+}
+.box{
+    margin-top: 100px;
+    border: 15px double #1C6EA4;
+    border-radius: 20px;
+    padding: 10px;
+    background: #CE5937;
+    background: linear-gradient(135deg, #CE5937 0%, #1C6EA4 50%, #C59237 100%);
+    box-shadow: 5px 5px 0px 0px #289FED, 
+    10px 10px 0px 0px #5FB8FF, 
+    15px 15px 0px 0px #A1D8FF, 
+    20px 20px 0px 0px #CAE6FF, 
+    25px 25px 0px 0px #E1EEFF, 
+    14px 16px 12px 3px rgba(182,52,255,0); 
+}
+
+.box hr{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.box h1{
+    text-align: center;
+    font-size: 50px;
+    color: palevioletred;
+    text-shadow: 0 1px 0 #999999, 0 2px 0 #888888,
+             0 3px 0 #777777, 0 4px 0 #666666,
+             0 5px 0 #555555, 0 6px 0 #444444,
+             0 7px 0 #333333, 0 8px 7px rgba(0, 0, 0, 0.4),
+             0 9px 10px rgba(0, 0, 0, 0.2);
+}
+
+div.buttons{
+    margin: 60px;
+}
+
+.btn {
+    color: rgb(51, 57, 63);
+    background: wheat;
+    border-radius: 60px;
+    box-shadow: 0px 12px 9px #666666;
+    font-family: Courier New;
+    font-size: 25px;
+    font-weight: 900;
+    margin-left: 15px;
+    padding: 30px 50px 30px 50px;
+    border: solid #ddc4ff 5px;
+    text-decoration: none;
+  }
+  
+.btn:hover {
+    background: salmon;
+    color: whitesmoke;
+    background-image: linear-gradient(to bottom, salmon, darksalmon);
+    text-decoration: none;
+}
+
+.btn-primary{
+    background: #3498db;
+    background-image: linear-gradient(to bottom, #3498db, #186696);
+}
+
+.btn-success{
+    background: #52c048;
+    background-image: linear-gradient(to bottom, #52c048, #0f8529);
+}
+
+.btn-info{
+    background: #27b9be;
+    background-image: linear-gradient(to bottom, #27b9be, #149e8c);
+}
+
+.btn-warning{
+    background: #cfcd2d;
+    background-image: linear-gradient(to bottom, #cfcd2d, #abad13);
+}
+
+.btn-danger{
+    background: #e03333;
+    background-image: linear-gradient(to bottom, #e03333, #9e1914);
+}
