@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="player-body">
+        <div id="player-screen">
+            <h1>Audio Player</h1> 
+        </div>
+        <div id="control-box">
+            <div class="upper">
+                <span>
+                    <button class="rewind small" type="button"></button>
+                    <button class="back small" type="button"></button>
+                    <button class="play big" type="button"></button>
+                    <button class="skip small" type="button"></button>
+                    <button class="forward small" type="button"></button>
+                </span>
+            </div>
+            <div class="middle">
+                <input type="range" class="slider" min="1" max="100" value="0">
+            </div>
+            <div class="lower">
+                <div>
+                    <span>
+                        <span class="time">00:00</span>
+                        <span>
+                            <button class="volume_down small" type="button"></button>
+                            <button class="volume_mute small" type="button"></button>
+                            <button class="volume_up small" type="button"></button>
+                        </span>
+                        <span class="time">00:00</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
