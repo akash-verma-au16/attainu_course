@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: rgba(53, 48, 48, 0.562) no-repeat;
+    background: linear-gradient(135deg, #CE5937 0%, #1C6EA4 50%, #C59237 100%) no-repeat;
+}
+
+label, input, th, td, textarea{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input, textarea{
+    background: rgba(48, 45, 45, 0.288);
+}
+
+#header{
+    background-color: rgba(20, 25, 27, 0.384);
+    border: 2px solid rgba(20, 25, 27, 0.384);
+    border-radius: 10px;
+}
+
+#header h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2px;
+    color: darksalmon;
+    font: bold italic 50px  Arial, Helvetica, sans-serif;
+}
+
+#header hr{
+    margin-bottom: 20px;
+    height: 2px;
+}
+
+.container{
+    max-width: 80%;
+    margin: 10px auto;
+    padding: 10px 10px 10px 50px;
+    border: 2px solid #1C6EA4;
+    border-radius: 10px;
+    background-color: rgb(26, 23, 23);
+}
+
+#form div{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+#form div > label{
+    flex: 1;
+}
+
+#form div > aside{
+    flex:2;
+}
+
+#form aside table tr, 
+#form aside table td,
+#form aside table th{
+    padding: 5px;
+}
+
+#footer div{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.button{
+    background-color: #ec6036;
+    color: #fff;
+    border: 3px solid rgb(252, 244, 213);
+    border-radius: 10px;
+    margin: 10px 10% 10px 7%;
+    padding: 5px 50px;
+    cursor: pointer;
+    font-size: larger;
+}
+
+.button:hover{
+    background-color: green;
+    border: 3px solid goldenrod;
+}

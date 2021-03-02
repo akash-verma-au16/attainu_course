@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header id="header">
+            <h1>Student Registration Form</h1>
+            <hr>
+        </header>
+        <main id="form-body">
+            <form action="" method="get" id="form">
+                <div>
+                    <label>First Name: </label>
+                    <aside> 
+                        <input type="text" placeholder="Enter First Name" maxlength="30" pattern="[a-zA-Z]" required>
+                    </aside>
+                </div>
+                
+                <div>
+                    <label>Last Name: </label>
+                    <aside>
+                        <input type="text" placeholder="Enter Last Name" maxlength="30" pattern="[a-zA-Z]" required>
+                    </aside>
+                </div>
+                
+                <div>
+                    <label>Date Of Birth: </label>
+                    <aside>
+                        <input type="date" required>
+                    </aside>
+                </div>
+    
+                <div>
+                    <label>Email Id: </label>
+                    <aside>
+                        <input type="email" placeholder="abc@xyz.com" required>
+                    </aside>
+                </div>
+    
+                <div>
+                    <label>Mobile No: </label>
+                    <aside>
+                        <input type="number" placeholder="10-digit number" maxlength="10" required>
+                    </aside>
+                </div>
+    
+                <div>
+                    <label>Gender: </label>
+                    <aside> 
+                        <input type="radio" name="gender" value="Male" required>
+                        <label>Male</label>
+                        <input type="radio" name="gender" value="Female" required>
+                        <label>Female</label>
+                    </aside>
+                </div>
+    
+                <div>
+                    <label>Address: </label>
+                    <aside>
+                        <textarea rows = "5" cols = "50" placeholder="Enter Address here" required></textarea>
+                    </aside>
+                   
+                </div>
+    
+                <div>
+                    <label>City: </label>
+                    <aside>
+                        <input type="text" pattern="[a-zA-Z]" placeholder="Enter your city name" required>
+                    </aside>
+                </div>
+    
+                <div>
+                    <label>Pin Code: </label>
+                    <aside>
+                        <input type="number" maxlength="6" placeholder="Enter pin code" required>
+                    </aside>
+                </div>
+    
+                <div>
+                    <label>State: </label>
+                    <aside>
+                        <input type="text" pattern="[a-zA-Z]" placeholder="Enter your state name" required>
+                    </aside>
+                </div>
+    
+                <div>
+                    <label>Country: </label>
+                    <aside>
+                        <input type="text" pattern="[a-zA-Z]" placeholder="Enter your country name" required>
+                    </aside>
+                </div>
+    
+                <div>
+                    <label>Hobbies: </label>
+                    <aside>
+                        <input type="radio" name="hobbies" value="Singing" required>
+                        <label>Singing</label>
+                        <input type="radio" name="hobbies" value="Dancing" required>
+                        <label>Dancing</label>
+                        <input type="radio" name="hobbies" value="Drawing" required>
+                        <label>Drawing</label>
+                        <input type="radio" name="hobbies" value="Sketching" required>
+                        <label>Sketching</label>
+                        <input type="radio" name="hobbies" value="" required>
+                        <label>Others <input type="text" name="hobbies" placeholder="Enter here" required/></label> 
+                    </aside>
+                </div>
+    
+                <div>
+                    <label>Qualifications: </label>
+                    <aside>
+                        <table>
+                            <tr>
+                                <th>S. No.</th>
+                                <th>Examination</th>
+                                <th>Board</th>
+                                <th>Percentage</th>
+                                <th>Year of Passing</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <th>Class X</th>
+                                <td><input type="text" placeholder="Enter here"></td>
+                                <td><input type="text" placeholder="Enter here"></td>
+                                <td><input type="text" placeholder="Enter here"></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <th>Class XII</th>
+                                <td><input type="text" placeholder="Enter here"></td>
+                                <td><input type="text" placeholder="Enter here"></td>
+                                <td><input type="text" placeholder="Enter here"></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <th>Graduation</th>
+                                <td><input type="text" placeholder="Enter here"></td>
+                                <td><input type="text" placeholder="Enter here"></td>
+                                <td><input type="text" placeholder="Enter here"></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <th>Masters</th>
+                                <td><input type="text" placeholder="Enter here"></td>
+                                <td><input type="text" placeholder="Enter here"></td>
+                                <td><input type="text" placeholder="Enter here"></td>
+                            </tr>
+                        </table>
+                    </aside>
+                </div>
+    
+                <div>
+                    <label>Courses: </label>
+                    <aside>
+                        <input type="radio" name="courses" value="Singing" required>
+                        <label>BCA</label>
+                        <input type="radio" name="courses" value="Dancing" required>
+                        <label>B.Com</label>
+                        <input type="radio" name="courses" value="Drawing" required>
+                        <label>B.Sc.</label>
+                        <input type="radio" name="courses" value="Sketching" required>
+                        <label>B.A.</label>
+                    </aside>
+                </div>
+            </form>
+        </main>
+        <footer id="footer">
+            <div>
+                <button class="button">Submit</button>
+                <button class="button">Reset</button>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
