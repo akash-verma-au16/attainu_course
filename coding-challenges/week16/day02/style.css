@@ -1,0 +1,136 @@
+body {
+	background-color: whitesmoke;
+	color: dimgray;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.6em;
+	margin: 0;
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+#main-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+	background-color: rgb(52, 196, 100);
+	color: whitesmoke;
+}
+
+#navbar {
+    position: fixed;
+    width: 100%;
+    top: 60px;
+    z-index: 2;
+	background-color: dimgray;
+	color: whitesmoke;
+}
+
+#navbar ul {
+	padding: 0;
+	list-style: none;
+}
+
+#navbar li {
+	display: inline;
+}
+
+#navbar a {
+	color: whitesmoke;
+	text-decoration: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+	font-size: 18px;
+	padding: 0px 15px 10px 15px;
+    
+}
+
+#navbar a:hover {
+    opacity: 0.5;
+    border-bottom: 2px solid maroon;
+}
+
+#content {
+    margin: 150px 0px;
+}
+
+#showcase {
+    position: relative;
+	background-image: url('https://canvasstorm.com/wp-content/uploads/2020/01/naruto-uchiha-itachi-anime-canvas-wall-art-acc-5282058928217.jpg');
+    background-size: wrap;
+    background-position: center;
+    width: 100%;
+    height: 700px;
+}
+
+#showcase div{
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+.title h2 {
+    color: whitesmoke;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: linear-gradient(to right, #2ebf91, #8360c3); 
+    border: 5px soild lightcoral;
+}
+
+#grid span {
+    margin: 10%;
+    padding: 20%;
+    color: antiquewhite;
+    border: 2px solid gray;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.tile-1 {
+    background-color: rgb(187, 34, 34);
+}
+
+.tile-2 {
+    background-color: rgb(180, 180, 35);
+}
+
+.tile-3 {
+    background-color: rgb(202, 141, 28);
+}
+
+.tile-4 {
+    background-color: rgb(46, 46, 187);
+}
+
+.tile-5 {
+    background-color: rgb(179, 50, 179);
+}
+
+.tile-6 {
+    background-color: indigo;
+}
+
+#main {
+	padding: 30px;
+}
+
+#main-footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 2;
+	background: dimgray;
+	color: whitesmoke;
+	text-align: center;
+	padding: 0px 20px;
+}
