@@ -1,0 +1,98 @@
+.local-container-1 {
+    padding: 5px 20px 0;
+    align-items: center;
+    max-width: 1000px;
+}
+
+.local-navbar {
+    border-bottom: 1px solid #d6d8db;
+}
+
+.local-list li {
+    margin: 0 10px;
+    font-size: 25px;
+}
+
+.local-container-2 {
+    margin: 30px auto;
+    max-width: 1000px;
+}
+
+.local-profile-image {
+    margin-left: 80px;
+    width: 150px;
+    height: 150px;
+    background-image: url(./img/profile_photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.about-me {
+   margin-left: 100px;
+}
+
+.about-me > div {
+    margin-bottom: 10px;
+}
+
+.local-description h3 {
+    margin-right: 10px;
+}
+
+.local-description button {
+    margin-right: 10px;
+    margin-bottom: 10px
+}
+
+.local-story {
+    text-align: center;
+    padding-left: 10px;
+    text-transform: capitalize;
+}
+
+.local-story > img {
+    width: 90px;
+    height: 90px;
+    border-radius: 100px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.local-tabs {
+    margin-top: 40px;
+    border-top: 1px solid #d6d8db;
+}
+
+.local-tabs > span {
+    margin: 0 30px;
+    padding: 15px 0;
+    border-top: 1px solid #fff;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.local-tabs > span:hover {
+    border-top: 1px solid #1f1f1f;
+    opacity: 1;
+}
+
+.local-tabs span > i {
+    margin-right: 10px;
+}
+
+.local-images > img{
+    width: 32%;
+    max-height: 310px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.local-list > li a,
+.local-list > li span {
+    color: #1f1f1f;
+    opacity: 0.5;
+    font-size: 12px;
+}
