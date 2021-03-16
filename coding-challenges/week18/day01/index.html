@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum Calculator</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body>
+    <header class="bg-secondary py-3 mb-3">
+        <h1 class="heading text-center fw-normal text-light">Sum Calculator</h1>
+    </header>
+
+    <main class="d-flex">
+        <section class="calculator border border-primary border-2 rounded p-4 m-3 w-50 align-self-start">
+            <div class="container justify-content-start w-100">
+                <p class="text-center text-danger fs-2 mb-5">Let's get Started...</p>
+                <form>
+                    <div class="mb-4 d-flex justify-content-between">
+                        <label for="Number1" class="form-label w-50">Number 1</label>
+                        <input type="number" class="form-control" id="Number1">
+                    </div>
+        
+                    <div class="mb-4 d-flex justify-content-between">
+                        <label for="Number2" class="form-label w-50">Number 2</label>
+                        <input type="number" class="form-control" id="Number2">
+                    </div>
+
+                    <div class="mb-3 mt-4 d-flex justify-content-center">
+                        <button type="submit" class="btn btn-success d-inline" id="add">Add Them</button>
+                        <button type="submit" class="btn btn-secondary d-inline ms-5" id="clear">Clear History</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <aside class="border border-primary border-2 rounded p-3 m-3 w-50">
+            <p class="list-group-item text-center text-warning fs-1 pt-2 mb-2 bg-secondary">Your History....</p>
+            <ul class="list-group"></ul>
+        </aside>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
