@@ -1,0 +1,50 @@
+.box {
+    height: 150px;
+    width: 150px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    color: #fff;
+    background-color: rgb(61, 202, 202);
+    border: 3px solid #afafaf;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px 1px rgba(160, 81, 28, 0.911);
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+
+.box:hover {
+    background-color: #818181;
+}
+
+.disable {
+    background-color: #818181;
+    opacity: 0.5;
+}
+
+.box.red {
+    background-color: rgb(158, 37, 37);
+}
+
+.box.green {
+    background-color: rgb(36, 153, 36);
+}
+
+.status {
+    background-color: #141414;
+}
+
+.show {
+    display: none;
+}
+
+.final-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+}
+
