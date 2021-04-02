@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hamming Distance</title>
+
+    <link rel="stylesheet" href="https://bootswatch.com/4/slate/bootstrap.min.css">
+</head>
+<body>
+    <header class="jumbotron border-0 m-0 text-center py-1">
+        <h1 class="display-3 text-danger fw-bold text-uppercase">Hamming Distance</h1>
+        <p>The Hamming distance between two strings of equal length is the number of 
+            positions at which the corresponding symbols are different.</p>
+        <p>Eg: The Hamming Distance between strings 'helloWorld' and 'worldhello' is 8.</p>
+    </header>
+
+    <main class="container p-3 w-50">
+        <div class="bg-light p-5 rounded">
+            <h4 class="text-danger pb-3">Enter Two strings of equal length seperated by a comma(',') (e.g.: "boy,toy") </h4>
+            <div class="form-group">
+                <div class="input-group">
+                    <h3 class="input-group-addon text-warning p-2 rounded">String</h3>
+                    <input type="text" class="form-control rounded" id="input" placeholder="Enter you string...">
+                </div>
+            </div>
+            <div class="text-danger alert p-1"></div>
+            <button class="btn btn-success btn-block btn-lg">Submit</button>
+            <div class="results"></div>
+        </div>
+    </main>
+
+    <footer class="jumbotron border-0 m-0 text-center py-2 position-fixed fixed-bottom">
+        <h4>Copyright, &copy; 2021</h4>
+    </footer>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
