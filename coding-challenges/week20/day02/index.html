@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Filter Users</title>
+
+    <link rel="stylesheet" href="https://bootswatch.com/4/slate/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <main id="ui" class="container p-3">
+        <header id="header" class="jumbotron border-0 m-0 text-center py-1">
+            <h1 class="display-4 text-danger fw-bold text-uppercase">Filter Users</h1>
+        </header>
+
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+                <form class="d-flex w-100">
+                    <input class="form-control me-2 w-50 search-bar" type="search" placeholder="Search">
+                    <div class="w-50 d-flex align-items-center d-inline-block">
+                        <h6 for="select" class="w-50 text-right text-success mr-3">Filter By : </h6>
+                        <select id="select-method" class="browser-default rounded bg-dark text-danger">
+                          <option value="first">First Name</option>
+                          <option value="last">Last Name</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </nav>
+
+        <section id="data-list" class="bg-light rounded text-center text-uppercase">
+            <div class="alert-message"></div>
+            <div class="d-flex bg-light text-warning fw-bold py-2">
+                <h5 class="w-50">First Name</h5>
+                <h5 class="w-50">Last Name</h5>
+            </div>
+            <ul class="list-group"></ul>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
