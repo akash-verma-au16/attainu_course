@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hangman</title>
+
+    <link rel="stylesheet" href="https://bootswatch.com/4/slate/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="ui" class="container p-3">
+        <header id="header" class="jumbotron border-0 m-0 text-center py-1">
+            <h1 class="display-4 text-danger fw-bold text-uppercase">Hangman</h1>
+        </header>
+        
+        <section class="bg-light px-4 py-2 rounded text-center text-uppercase">
+            <div class="mb-4">
+                <img class="img-fluid" src="img/1.png" style="height: 200px;"alt="game-img">
+            </div>
+
+            <h5 id="alert-message" class="alert alert-info p-3">guess the word ??</h5>
+
+            <div id="word-ui" class="p-3 text-warning bg-primary rounded"></div>
+
+            <div id="keyboard" class="bg-dark border border-info rounded p-2">
+                <ul class="d-flex justify-content-center m-0">
+                    <li class="key">q</li>
+                    <li class="key">w</li>
+                    <li class="key">e</li>
+                    <li class="key">r</li>
+                    <li class="key">t</li>
+                    <li class="key">y</li>
+                    <li class="key">u</li>
+                    <li class="key">i</li>
+                    <li class="key">o</li>
+                    <li class="key">p</li>
+                </ul>
+                <ul class="d-flex justify-content-center m-0">
+                    <li class="key">a</li>
+                    <li class="key">s</li>
+                    <li class="key">d</li>
+                    <li class="key">f</li>
+                    <li class="key">g</li>
+                    <li class="key">h</li>
+                    <li class="key">j</li>
+                    <li class="key">k</li>
+                    <li class="key">l</li>
+                </ul>
+                <ul class="d-flex justify-content-center m-0">
+                    <li class="key">z</li>
+                    <li class="key">x</li>
+                    <li class="key">c</li>
+                    <li class="key">v</li>
+                    <li class="key">b</li>
+                    <li class="key">n</li>
+                    <li class="key">m</li>
+                </ul>
+            </div>
+
+            <div class="pt-2">
+                <button class="btn btn-lg btn-outline-success btn-block text-uppercase">new game</button>
+                <div id="scoreboard" class="d-flex justify-content-center">
+                    <h5 class="w-50 px-2 pt-2 text-success">Wins : <span id="wins">0</span></h5>
+                    <h5 class="w-50 px-2 pt-2 text-danger">Losses : <span id="losses">0</span></h5>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

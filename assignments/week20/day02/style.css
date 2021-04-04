@@ -1,0 +1,36 @@
+#ui {
+    max-width: 600px;
+}
+
+#keyboard > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#keyboard > ul li {
+    padding: 0px 3.5%;
+    line-height: 40px;
+    font-weight: 600;
+    border: 1px solid #e5e5e500;
+}
+
+#keyboard li:hover {
+    border-color: #e5e5e5;
+    cursor: pointer;
+}
+
+@media(max-width: 600px) {
+    #header h1 {
+        font-size: 35px;
+    }
+    #keyboard > ul li {
+        padding: 0px 3%;
+    }
+}
+
+@media(max-width: 350px) {
+    #keyboard > ul li {
+        padding: 0px 1%;
+    }
+}
