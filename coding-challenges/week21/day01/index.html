@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Currency Converter</title>
+
+    <link rel="stylesheet" href="https://bootswatch.com/4/slate/bootstrap.min.css">
+</head>
+<body>
+    <header class="jumbotron border-0 m-0 text-center py-1">
+        <h1 class="display-4 text-danger fw-bold text-uppercase">Currency Converter</h1>
+    </header>
+
+    <main class="container w-50 p-3 mx-auto">
+        <div class="bg-light p-5 rounded my-5">
+            <h4 class="text-danger text-uppercase text-center">Select currencies</h4>
+
+            <div id="currency-select" class="mb-4">
+                <label for="select-from" class="text-primary">Change From :</label>
+                <div class="mb-3 d-flex">
+                    <select id="select-from" class="form-select px-3 py-2 border rounded bg-dark text-light w-50">
+                        <option selected>From</option>
+                    </select>
+                    <div class="input-group w-50 ml-2">
+                        <input id="from-value" type="number" class="form-control bg-dark text-light text-center" placeholder="0">
+                    </div>
+                </div>
+            </div>
+
+            <div id="currency-select" class="mb-3">
+                <label for="select-from" class="text-primary">Change To :</label>
+                <div class="mb-3 d-flex">
+                    <select id="select-to" class="form-select px-4 py-2 border rounded bg-dark text-light w-50">
+                        <option selected>To</option>
+                    </select>
+                    <div class="input-group w-50 ml-2">
+                        <input id="to-value" type="number" class="form-control bg-dark text-light text-center" placeholder="0">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <h5 id="exchange-rate" class="text-warning text-center"></h5>
+                <button class="btn btn-success btn-block btn-lg text-uppercase">Submit</button>
+            </div>
+
+            <div class="alert-message"></div>
+        </div>
+    </main>
+
+    <footer class="jumbotron border-0 m-0 text-center py-2 position-fixed fixed-bottom">
+        <h4>Copyright, &copy; 2021</h4>
+    </footer>
+    
+    <script type="module" src="app.mjs"></script>
+  </body>
+</html>
