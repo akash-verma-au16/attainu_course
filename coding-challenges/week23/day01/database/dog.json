@@ -1,0 +1,10 @@
+[
+    {
+        "name": "tyson",
+        "breed": "german shepard",
+        "age": "3",
+        "height": "70",
+        "weight": "40",
+        "owner_name": "akash"
+    }
+]

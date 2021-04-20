@@ -1,0 +1,30 @@
+<h2 class="text-center mb-5">Enter the Details of your Dog:</h2>
+<form id='form-info' action="/show" method="POST">
+    <div class="mb-3 d-flex">
+        <label for="name" class="form-label w-50 ms-5">Name</label>
+        <input class="form-control w-50 me-5" type="text" id="name" name="name" required>
+    </div>
+    <div class="mb-3 d-flex">
+        <label for="breed" class="form-label w-50 ms-5">Breed</label>
+        <input class="form-control w-50 me-5" id="breed" type="text" name="breed" required>
+    </div>
+    <div class="mb-3 d-flex">
+        <label for="age" class="form-label w-50 ms-5">Age (years)</label>
+        <input class="form-control w-50 me-5" type="number" id="age" name="age" required>
+    </div>
+    <div class="mb-3 d-flex">
+        <label for="height" class="form-label w-50 ms-5">Height (cm)</label>
+        <input class="form-control w-50 me-5" id="height" type="number" name="height" required>
+    </div>
+    <div class="mb-3 d-flex">
+        <label for="weight" class="form-label w-50 ms-5">Weight (Kg)</label>
+        <input class="form-control w-50 me-5" id="weight" type="number" name="weight" required>
+    </div>
+    <div class="mb-3 d-flex">
+        <label for="owner-name" class="form-label w-50 ms-5">Owner Name</label>
+        <input class="form-control w-50 me-5" id="owner-name" type="text" name="owner_name" required>
+    </div>
+    <div class="mt-4 d-flex">
+        <button type="submit" class="btn btn-primary btn-lg px-5 w-100">Submit</button>
+    </div>
+</form>
