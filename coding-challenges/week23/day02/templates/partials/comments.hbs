@@ -1,0 +1,17 @@
+<div class="border p-5">
+    <h2 class="text-primary text-uppercase">Comments</h2>
+    <hr>
+    <div>
+        {{#each comments}}
+        <div class="card m-3 shadow">
+            <div class="card-body">
+                {{#with this}}
+                <h5 class="card-title fw-bold text-danger">{{name}}</h5>
+                <h6 class="card-subtitle mb-2 text-success">{{email}}</h6>
+                <p class="card-text">{{body}}</p>
+                {{/with}}
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
