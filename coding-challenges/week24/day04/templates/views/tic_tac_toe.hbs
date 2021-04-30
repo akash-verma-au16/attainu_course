@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>html_headers}}
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/tic_tac_toe.css">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <section class="final-message show text-center"></section>
+        <main class="d-flex bg-secondary">
+            {{>player_1}}
+            {{>board}}
+            {{>player_2}}
+        </main>
+    </div>
+
+    {{>footer}}
+
+    <script src="/js/tic_tac_toe.js"></script>
+</body>
+
+</html>
