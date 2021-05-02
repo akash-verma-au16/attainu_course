@@ -1,12 +1,12 @@
-const express = require('express')
-require('./db/mongoose')
-const userRouter = require('./routers/user')
-const taskRouter = require('./routers/task')
+const express = require('express');
+require('./db/mongoose');
+const userRouter = require('./routers/user');
+const movieRouter = require('./routers/movie');
 
-const app = express()
+const app = express();
 
-app.use(express.json())
-app.use(userRouter)
-app.use(taskRouter)
+app.use(express.json());
+app.use(userRouter);
+app.use(movieRouter);
 
-module.exports = app
+module.exports = app;
