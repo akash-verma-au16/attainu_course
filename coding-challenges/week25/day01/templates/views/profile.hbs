@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Instagram</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container d-flex justify-content-between">
+            <a href="#"><img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
+                    alt="Instagram Logo" class="mx-5"></a>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+
+            <form class="d-flex mx-5">
+                <button class="btn" type="submit"><i class="fas fa-home"></i></button>
+                <button class="btn" type="submit"><i class="fab fa-facebook-messenger"></i></button>
+                <button class="btn" type="submit"><i class="far fa-compass"></i></button>
+                <button class="btn" type="submit"><i class="far fa-heart"></i></button>
+                <a href="#"><img
+                        src="https://instagram.flko5-1.fna.fbcdn.net/v/t51.2885-19/s320x320/39356507_880497582148947_462934553237913600_n.jpg?tp=1&_nc_ht=instagram.flko5-1.fna.fbcdn.net&_nc_ohc=csjotkoZZ7sAX_vkU0t&oh=0aa41544fa2eb82e643c2489efc0912c&oe=606E5D94"
+                        alt="" id="small-dp"></a>
+            </form>
+        </div>
+    </nav>
+
+    <div class="d-flex align-items-start justify-content-center main-div">
+        <section class="img mx-5">
+            <img src="https://instagram.flko5-1.fna.fbcdn.net/v/t51.2885-19/s320x320/39356507_880497582148947_462934553237913600_n.jpg?tp=1&_nc_ht=instagram.flko5-1.fna.fbcdn.net&_nc_ohc=csjotkoZZ7sAX_vkU0t&oh=0aa41544fa2eb82e643c2489efc0912c&oe=606E5D94"
+                alt="" id="dp">
+        </section>
+        <section class="profile mx-5">
+            <span class="d-flex align-items-center mb-3">
+                <p class="mx-5 fs-2">{{name}}</p>
+                <button type="button" class="btn btn-outline-secondary">Edit Profile</button>
+                <i class="fas fa-cog fa-lg mx-3"></i>
+            </span>
+
+            <span class="d-flex align-items-center justify-content-between">
+                <span class="d-flex align-items-center">
+                    <p class="fs-4 me-2">50</p>
+                    <p class="fw-lighter">posts</p>
+                </span>
+                <span class="d-flex align-items-center">
+                    <p class="fs-4 me-2">250</p>
+                    <p class="fw-lighter">Followers</p>
+                </span>
+                <span class="d-flex align-items-center">
+                    <p class="fs-4 me-2">100</p>
+                    <p class="fw-lighter">Following</p>
+                </span>
+            </span>
+            <span class="d-flex align-items-center mb-3">
+                <p class="mx-5 about-me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tenetur,
+                    tempore quisquam architecto aliquam magni incidunt vero aliquid, eum repellendus quo natus, quas
+                    fuga? Pariatur rem mollitia dolores laudantium ut!
+                </p>
+            </span>
+        </section>
+    </div>
+    {{!-- image upload --}}
+
+    <form action="/profile" method="post" enctype="multipart/form-data">
+        <input type="file" name="avatar" />
+        <button type="submit" class="btn btn-primary btn-block"> Upload Image </button>
+
+    </form>
+
+    <div class="main-div">
+        <div class="row flex-wrap">
+            {{#each images}}
+            <div class="col-sm">
+                <img src="data:image/png;base64,{{this.image}}" alt="loading" class="img-thumbnail"
+                    style="width: 300px; height: 300px;">
+            </div>
+            {{/each}}
+        </div>
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

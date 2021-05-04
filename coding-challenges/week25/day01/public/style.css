@@ -1,0 +1,34 @@
+#small-dp{
+    border-radius: 50%;
+    height: 5vh;
+    margin-left: 1vw;
+}
+
+#dp{
+    border-radius: 50%;
+    height: 25vh;
+}
+
+div.main-div{
+    padding-top: 5vh;
+    margin: auto;
+    width: 70vw;
+}
+
+section p.about-me{
+    width: 30vw;
+    padding: 1rem;
+    line-height: 2rem;
+}
+
+div.row div{
+    padding: 1rem;
+}
+
+img:hover{
+    cursor: pointer;
+}
+
+form input.form-control{
+    width: 30vw;
+}
