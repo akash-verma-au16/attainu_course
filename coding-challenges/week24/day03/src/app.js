@@ -2,7 +2,7 @@ const path = require('path');
 const upload = require('express-fileupload');
 const express = require('express');
 const hbs = require('hbs');
-const router = require('./routers/users')
+const router = require('./routers/users');
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -20,7 +20,6 @@ hbs.registerPartials(partialsPath);
 // Setup static directory to serve
 app.use(express.static(publicDirectoryPath));
 app.use(upload());
-app.use(express.urlencoded({ extended: true }));
-app.use(router)
+app.use(router);
 
 app.listen(port, () => console.log('Server is up on port ' + port));
