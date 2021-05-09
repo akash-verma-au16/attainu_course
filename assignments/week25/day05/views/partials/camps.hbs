@@ -1,0 +1,17 @@
+<div class="row text-center" style="display:flex; flex-wrap: wrap;">
+
+    {{#each campgrounds}}
+    <div class="col-md-3 col-sm-6">
+        <div class="thumbnail">
+            {{#with this}}
+            <img src="data:image/png;base64,{{thumbnail}}" class="img-thumbnail" style="width: 250px; height: 250px;">
+            <div class="caption">
+                <h4>{{camp_name}}</h4>
+            </div>
+            <p><a class="btn btn-success" href="/campgrounds/{{_id}}">More Info</a></p>
+            {{/with}}
+        </div>
+    </div>
+    {{/each}}
+
+</div>
