@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "5d713995b721c3bb38c1f5d5",
+    "carModel": "Lamborgini",
+    "price": 50000000,
+    "customer": "5d7a514b5d2c12c7449be085"
+  },
+  {
+    "_id": "5d713a66ec8f2b88b8f830b0",
+    "carModel": "Audi",
+    "price": 40000000,
+    "customer": "5d7a514b5d2c12c7449be085"
+  },
+  {
+    "_id": "5d725a037b292f5f8ceff717",
+    "carModel": "Ferrari",
+    "price": 80000000,
+    "customer": "5d7a514b5d2c12c7449be085"
+  },
+  {
+    "_id": "5d725a1b7b292f5f8ceff718",
+    "model": "Alto",
+    "price": 400000,
+    "customer": "5c8a1d5b0190b214360dc031"
+  }
+]
