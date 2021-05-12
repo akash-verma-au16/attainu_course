@@ -1,0 +1,15 @@
+CREATE DATABASE bank;
+
+USE bank;
+
+CREATE TABLE account (     id INT auto_increment,     accountNumber INT,     accountType INT,     balance FLOAT,     primary key(id) );
+
+CREATE TABLE customer (     id INT auto_increment,     customerName VARCHAR(255),     accountNumber INT,     primary key(id) );
+
+CREATE TABLE employee (     id INT auto_increment,     employeeName VARCHAR(255),     designation VARCHAR(255),     primary key(id)     );
+
+INSERT INTO account(accountNumber, accountType, balance) VALUES (004561, 'savings', 2000.00);
+
+INSERT INTO customer(customerName, accountNumber) VALUES ('Jhon', 004561);
+
+INSERT INTO employee(employeeName, designation) VALUES ('Mary', 'manager');
