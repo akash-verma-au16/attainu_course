@@ -1,0 +1,27 @@
+Ans-1
+SELECT first_name,last_name FROM sakila.actor;
+--------------------------------------------
+Ans-2
+SELECT * FROM sakila.actor WHERE first_name='JOE';
+------------------------------------------------
+Ans-3
+SELECT * FROM sakila.actor WHERE last_name LIKE '%GEN%';
+-----------------------------------------------------
+Ans-4
+SELECT * FROM world.country WHERE Name IN ('afghanistan', 'bangladesh','china');
+------------------------------------------------------
+Ans-5
+
+ALTER TABLE sakila.actor
+DROP COLUMN description;
+---------------------------------------------
+Ans-6
+
+SELECT 
+    last_name, 
+    COUNT(last_name)
+FROM
+    sakila.actor
+GROUP BY last_name
+HAVING COUNT(last_name) > 1;
+-----------------------------------------
