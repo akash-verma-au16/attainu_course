@@ -1,0 +1,63 @@
+<div class='container w-50'>
+  <form action='/country' method='POST'>
+    <div class='mb-3'>
+      <label for='exampleInputEmail1' class='form-label'>Country name :</label>
+      <input
+        type='text'
+        placeholder='Name'
+        class='form-control'
+        aria-describedby='emailHelp'
+        name='country'
+      />
+    </div>
+    <button type='submit' class='btn btn-primary'>Add to Database</button>
+  </form>
+</div>
+
+<div class='container w-50'>
+  <form action='/country'>
+    <button type='submit' class='btn btn-primary'>View Database</button>
+  </form>
+</div>
+
+<div class='container w-50'>
+  <form class='del-form' action='/delete' method='POST'>
+    <div class='mb-3'>
+      <label for='exampleInputEmail1' class='form-label'>Country name to delete:</label>
+      <input
+        type='text'
+        placeholder='Name'
+        class='form-control'
+        aria-describedby='emailHelp'
+        name='country'
+      />
+    </div>
+    <button type='submit' class='btn btn-primary' id='del-btn'>Delete Country</button>
+  </form>
+</div>
+
+<div class='container w-50'>
+  <form class='del-form'>
+    <div class='mb-3'>
+      <label for='exampleInputEmail1' class='form-label'>Country name to update
+        and its id:</label>
+      <input
+        type='text'
+        placeholder='Name'
+        class='form-control'
+        id='countryInput'
+        aria-describedby='emailHelp'
+        name='country'
+      />
+      <input
+        type='text'
+        placeholder='Country ID'
+        class='form-control my-4'
+        id='idInput'
+        aria-describedby='emailHelp'
+        name='id'
+      />
+    </div>
+    <button type='submit' class='btn btn-primary' id='update-btn'>Update Country</button>
+  </form>
+</div>
