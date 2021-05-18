@@ -1,0 +1,56 @@
+Ans-1
+ALTER TABLE sakila.actor MODIFY last_name varchar(20) AFTER actor_id;
+SELECT * FROM sakila.actor WHERE last_name LIKE '%LI%' ORDER BY last_name,first_name;
+---------------------------------
+Ans-2
+SELECT 
+    last_name, 
+    COUNT(last_name)
+FROM
+    sakila.actor
+GROUP BY last_name
+HAVING COUNT(last_name) > 1;
+----------------------------
+Ans-3
+UPDATE sakila.actor SET first_name='HARPO' WHERE last_name= 'WILLIAMS' AND first_name='GROUCHO';
+-----------------------------
+Ans-4
+SELECT
+  sakila.staff.first_name,
+  sakila.staff.last_name,
+  sakila.address.address
+FROM sakila.staff
+INNER JOIN sakila.address
+ON staff.address_id = address.address_id;
+-----------------------------------
+Ans-5
+SELECT 
+    payment.staff_id, 
+    SUM(amount),
+    staff.first_name
+FROM
+    sakila.payment
+INNER JOIN sakila.staff
+ON payment.staff_id = staff.staff_id
+WHERE payment_date LIKE '2005-08%'
+GROUP BY staff_id;
+-----------------------------------
+Ans-6
+SELECT 
+    title, 
+    COUNT(title)
+FROM
+    sakila.film
+WHERE title='HUNCHBACK IMPOSSIBLE';
+-----------------------------------
+Ans-7
+SELECT 
+    payment.customer_id, 
+    SUM(amount),
+    customer.last_name
+FROM
+    sakila.payment
+INNER JOIN sakila.customer
+ON payment.customer_id = customer.customer_id
+GROUP BY customer_id
+ORDER BY last_name ASC;
