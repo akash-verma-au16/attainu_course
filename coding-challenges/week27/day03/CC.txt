@@ -1,0 +1,50 @@
+1. Write an SQL query to get all the movies which are categorized as ‘family’ movies.
+
+    select f.category as Film, count(i.inventory_id) as 'Inventory Count'
+	from film as f
+	join inventory as i
+	on f.film_id = i.film_id
+	where f.category = 'Family'
+	group by f.film_id;
+
+2. You want to run an email marketing campaign in Canada, for which you will
+need the names and email addresses of all Canadian customers. Use joins to
+retrieve this information.
+
+	select concat(c.first_name,' ',c.last_name) as 'Name', c.email as 'E-mail'
+	from customer as c
+	join address as a on c.address_id = a.address_id
+	join city as cy on a.city_id = cy.city_id
+	join country as ct on ct.country_id = cy.country_id
+	where ct.country = 'Canada';
+
+3. Display the most frequently rented movies in descending order.
+
+    select f.title as 'Movie', count(r.rental_date) as 'Times Rented'
+	from film as f
+	join inventory as i on i.film_id = f.film_id
+	join rental as r on r.inventory_id = i.inventory_id
+	group by f.title
+	order by count(r.rental_date) desc;
+
+4. Write a query to display how much business, in dollars, each store brought in.
+
+    select store as 'Store', total_sales as 'Total Sales' from sales_by_store;
+	select concat(c.city,', ',cy.country) as `Store`, s.store_id as 'Store ID', sum(p.amount) as `Total Sales` 
+	from payment as p
+	join rental as r on r.rental_id = p.rental_id
+	join inventory as i on i.inventory_id = r.inventory_id
+	join store as s on s.store_id = i.store_id
+	join address as a on a.address_id = s.address_id
+	join city as c on c.city_id = a.city_id
+	join country as cy on cy.country_id = c.country_id
+	group by s.store_id;
+
+5. Write a query to display for each store its store ID, city, and country.
+
+    select s.store_id as 'Store ID', c.city as 'City', cy.country as 'Country'
+	from store as s
+	join address as a on a.address_id = s.address_id
+	join city as c on c.city_id = a.city_id
+	join country as cy on cy.country_id = c.country_id
+	order by s.store_id;
