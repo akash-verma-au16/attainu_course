@@ -1,0 +1,152 @@
+Ans-1- Implementation of LRU Cache:
+
+	class LRUCache:
+    	    def __init__(self, capacity: int):
+      		self.cache = collections.OrderedDict()
+        	self.capacity = capacity
+
+    	    def get(self, key: int) -> int:
+        	if key in self.cache:
+            		self.cache.move_to_end(key)
+            		return self.cache[key]
+        	else:
+            		return -1
+
+    	    def put(self, key: int, value: int) -> None:
+        	if key in self.cache:
+            		self.cache.move_to_end(key)
+        		self.cache[key] = value
+        	if len(self.cache) > self.capacity:
+            		self.cache.popitem(last=False)
+
+
+	# Your LRUCache object will be instantiated and called as such:
+	# obj = LRUCache(capacity)
+	# param_1 = obj.get(key)
+	# obj.put(key,value)
+
+
+
+ANS-2- When you search a URL in browser:
+		- Browser first splits the URL into a hostname and a path.
+
+		- Then HTTP request is sent to ask for the data at the given hostname and path.
+
+		- The HTTP request goes to the DNS Server to get the corresponding IP address 
+		  attached to the given hostname and path.
+
+		- A DNS server is a computer server that contains a mapped database of public IP addresses 
+		  and their associated hostnames for all there is to find on the Internet. 
+
+		- Then a TCP/IP connection is established to the computer specified via the IP address 
+		  and then the browser sends the HTTP request to the given IP address of the Website.
+
+		- TCP/IP (Transmission Control Protocol/Internet Protocol) is a set of communication 
+  		  protocols used to interconnect network devices on the internet. 
+
+		- When the TCP/IP connection is established data from the web server can be freely 
+		  shared under the TCP/IP protocols to the computer requesting the data.
+
+		- When the Web server reads the hostname and path and finds or generates an HTTP 
+		  response containing that data and sends that HTTP response to the browser.
+
+		- Now the received HTTP response is split it into the headers and the body and the 
+		  browser then interprets the data to decide how to display it in the browser.
+
+
+
+
+Ans-3- Difference between Private and Public IP Address: 
+
+	# A public IP address identifies you to the wider internet so that all the information 
+	  you're searching for can find you. A private IP address is used within a private 
+	  network to connect securely to other devices within that same network. Each device 
+	  within the same network has a unique private IP address. 
+	
+	# Key Differences:
+
+			PRIVATE IP ADDRESS	       						 PUBLIC IP ADDRESS
+
+          > Scope is local.	                                                  > Scope is global.
+          > It is used to communicate within the network.	                  > It is used to communicate outside the network.
+          > Private IP addresses of the systems connected                         > Public IP may differ in uniform or non-uniform manner.
+            in a network differ in a uniform manner.	
+          > It works only in LAN.	                                          > It is used to get internet service.
+          > It is used to load network operating system.	                  > It is controlled by ISP.
+          > It is available in free of cost.	                                  > It is not free of cost.
+          > Private IP can be known by entering “ipconfig”                        > Public IP can be known by searching “what is my ip” on google.
+            on command prompt.	
+
+
+
+
+Ans-4- Deadlock Characteristics:
+
+	# A deadlock happens in an operating system when two or more processes need some resources to complete their
+	  execution that is held by another process.
+
+	# A process in operating systems requests different resources and uses them in the following way:
+		- Requests a resource
+		- Use the resource
+		- Releases the resource
+
+	# There are four conditions that must be present for a deadlock to occur:
+		- Mutual Exclusion: There should be a resource that can only be held by one process at a time. So, the other
+				    processes which need the same resource can't have it.
+
+		- No Pre-emption: When a process can hold multiple resources and still request more resources from other
+				  processes which are holding them.
+
+		- Hold and Wait: When a resource cannot be pre-empted from a process by force. A process can only release
+				 a resource voluntarily when it is ready or finished with its execution.
+
+		- Circular Wait: When a process is waiting for the resource held by the second process, which is waiting for
+				 the resource held by the third process and so on, till the last process is waiting for a 
+				 resource held by the first process making a circular chain of dependent processes.
+
+
+
+
+
+Ans-5 - Breif Explanation:
+
+		> Swap Memory: Swapping is a memory management scheme in which any process can be temporarily swapped from main memory to secondary memory 
+			       so that the main memory can be made available for other processes. It is used to improve main memory utilization. In secondary 
+			       memory, the place where the swapped-out process is stored is called swap space.
+			       The purpose of the swapping in operating system is to access the data present in the hard disk and bring it to RAM so that the 
+			       application programs can use it. The thing to remember is that swapping is used only when data is not present in RAM.
+
+			       Example: Suppose the user process's size is 2048KB and is a standard hard disk where swapping has a data transfer rate of 1Mbps. 
+					 Now we will calculate how long it will take to transfer from main memory to secondary memory.
+		
+		> Context switching: The Context switching is a technique or method used by the operating system to switch a process from one state to another 
+				     to execute its function using CPUs in the system. When switching perform in the system, it stores the old running process's 
+				     status in the form of registers and assigns the CPU to a new process to execute its tasks. While a new process is running in 
+				     the system, the previous process must wait in a ready queue. The execution of the old process starts at that point where 
+				     another process stopped it. It defines the characteristics of a multitasking operating system in which multiple processes 
+				     shared the same CPU to perform multiple tasks without the need for additional processors in the system. 
+
+		> IPv4 address: IPv4 addresses are actually 32-bit binary numbers, consisting of the two subaddresses (identifiers) mentioned above which, 
+				respectively, identify the network and the host to the network, with an imaginary boundary separating the two. An IP address 
+				is, as such, generally shown as 4 octets of numbers from 0-255 represented in decimal form instead of binary form.
+				IPv4 addresses are composed of two parts. The first numbers in the address specify the network, while the latter numbers 
+				specify the specific host. A subnet mask specifies which part of an address is the network part, and which part addresses 
+				the specific host.
+
+				For example: the address 168.212.226.204 represents the 32-bit binary number 10101000.11010100.11100010.11001100.
+
+		> IPv6 address: To avoid the seemingly reoccurring issue in technology, where a specification’s limitation seems more than sufficient at the time, 
+			        but inevitably becomes too small, the designers of IPv6 created an enormous address space for IPv6. The address size was increased 
+			        from 32 bits in IPv4 to 128 bits in IPv6.
+			        The IPv6 has a theoretical limit of 3.4 x 1038 addresses. That’s over 340 undecillion addresses, which is reportedly enough addresses 
+			        to assign one to every single atom on the surface of the earth.
+			       
+			       For example: the address 2DAB:FFFF:0000:3EAE:01AA:00FF:DD72:2C4A represents the 128-bit binary number.
+
+	
+
+
+
+
+
+
