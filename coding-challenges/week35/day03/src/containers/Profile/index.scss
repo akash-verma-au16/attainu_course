@@ -1,0 +1,13 @@
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 30ch;
+  margin: 0 auto;
+  padding: 5rem 0rem;
+  border: 2px solid rgb(219, 121, 121);
+  border-radius: 1rem;
+  background: #FFBCBC;
+}
