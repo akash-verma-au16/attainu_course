@@ -1,0 +1,134 @@
+ANS-1- LRU Cache :
+			As a user you want pages to load as fast as possible. When a user opens a website, it
+			opens the corresponding file on disk, read it in the HTML, and send it back over the 
+			network. This is how it works but it is pretty slow, since accessing disk takes a while.
+			
+			So, if a lot of users request the same website, its better to only read it from the
+			disk once while keeping the page in memory so you can quickly send it out again when 
+			it is requested and that's simply all what a cache means and used for.
+
+			A cache is just a fast storage which means reading data from a cache takes less time than  
+			reading it from something else (like a hard disk) but caches are generally very small when
+			compared to hard disks and far more costly as well. So, you can't fit everything in a cache
+			and that's why you're still going to have to use larger and slower storage from time to time.
+
+			>> We use two data structures to implement an LRU Cache. 
+				- Queue : which is implemented using a doubly linked list. 
+ 
+				- Hash : with page number as key and address of the corresponding queue node as value.
+
+			>> Strengths:
+				- Super fast accesses : LRU caches store items in order from most-recently used to least-recently used. 
+							That means both can be accessed in O(1)O(1) time.
+
+				- Super fast updates : Each time an item is accessed, updating the cache takes O(1)O(1) time.
+
+			>> Weaknesses:
+				- Space heavy:  An LRU cache storing n items requires a linked list of length n, and a hash map 
+						storing n items. That's O(n)O(n) space which is two data structures and space heavy.
+
+ANS-2- When you search a URL in browser:
+		- Browser first splits the URL into a hostname and a path.
+
+		- Then HTTP request is sent to ask for the data at the given hostname and path.
+
+		- The HTTP request goes to the DNS Server to get the corresponding IP address 
+		  attached to the given hostname and path.
+
+		- A DNS server is a computer server that contains a mapped database of public IP addresses 
+		  and their associated hostnames for all there is to find on the Internet. 
+
+		- Then a TCP/IP connection is established to the computer specified via the IP address 
+		  and then the browser sends the HTTP request to the given IP address of the Website.
+
+		- TCP/IP (Transmission Control Protocol/Internet Protocol) is a set of communication 
+  		  protocols used to interconnect network devices on the internet. 
+
+		- When the TCP/IP connection is established data from the web server can be freely 
+		  shared under the TCP/IP protocols to the computer requesting the data.
+
+		- When the Web server reads the hostname and path and finds or generates an HTTP 
+		  response containing that data and sends that HTTP response to the browser.
+
+		- Now the received HTTP response is split it into the headers and the body and the 
+		  browser then interprets the data to decide how to display it in the browser.
+
+
+ANS-3- NAT :
+	        - NAT stands for Network Address Translation. Basically, NAT allows a single device 
+		  like a router to act as a central source for an IP address to a public network and 
+		  uses internal private IP addresses for the devices connected to the central router 
+		  which means that only a single unique IP address is required to represent an entire 
+		  group of devices to the rest of the network.
+
+		  A router which is connected with the local network will be having an inside local 
+		  IP addresses for the devices connected intenally or privately to it and the router 
+		  itself which is connected to the global network will be having a global IP address.
+
+       ARP :   
+		- ARP (Address Resolution Protocol) is a network protocol used to find out the hardware 
+		  address i.e. MAC address of a device from an IP address. The sending device uses ARP 
+		  to map IP addresses to MAC addresses. The device sends an ARP request containing the 
+		  IP address of the receiving device.
+
+		  ARP is one of the most important protocols of the network layer in the OSI model which 
+		  helps in finding the MAC address (Media Access Control Address) from the IP address of 
+		  the system i.e. the main duty of the ARP is to convert the 32-bit IP address(for IPv4) 
+		  to 48-bit address i.e. the MAC address.
+
+
+Ans-4- Deadlock Characteristics:
+
+	# A deadlock happens in an operating system when two or more processes need some resources to complete their
+	  execution that is held by another process.
+
+	# A process in operating systems requests different resources and uses them in the following way:
+		- Requests a resource
+		- Use the resource
+		- Releases the resource
+
+	# There are four conditions that must be present for a deadlock to occur:
+		- Mutual Exclusion: There should be a resource that can only be held by one process at a time. So, the other
+				    processes which need the same resource can't have it.
+
+		- No Pre-emption: When a process can hold multiple resources and still request more resources from other
+				  processes which are holding them.
+
+		- Hold and Wait: When a resource cannot be pre-empted from a process by force. A process can only release
+				 a resource voluntarily when it is ready or finished with its execution.
+
+		- Circular Wait: When a process is waiting for the resource held by the second process, which is waiting for
+				 the resource held by the third process and so on, till the last process is waiting for a 
+				 resource held by the first process making a circular chain of dependent processes.
+
+
+ANS-5- Pagination : 		
+			- Paging is a fixed size partitioning scheme for memory management.
+
+			- In paging, secondary memory and main memory are divided into 
+			  equal fixed size partitions.
+
+			- The partitions of secondary memory are called pages.
+
+			- The partitions of main memory are called frames.
+
+			- Each process is divided into parts where the size of each part 
+			  is the same as the page size.
+
+			- The size of the last part may be less than the page size.
+
+			- The pages of process are stored in the frames of main memory 
+			  depending upon their availability.
+
+			- Paging is a logical concept used for faster access to data.
+
+			>> Advantages of Paging :
+						 - Easy to use memory management algorithms.
+						 - No need for external Fragmentation.
+						 - Swapping is easy between equal-sized pages and page frames.
+
+			>> Disadvantages of Paging :
+						    - May cause Internal fragmentation
+						    - Complex memory management algorithm
+						    - Page tables consume additonal memory.
+						    - Multi-level paging may lead to memory reference overhead.
